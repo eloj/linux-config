@@ -1,0 +1,189 @@
+00:00.0 Host bridge [0600]: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor DRAM Controller [8086:0150] (rev 09)
+	Subsystem: ASRock Incorporation Motherboard [1849:0150]
+	Flags: bus master, fast devsel, latency 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: ivb_uncore
+
+00:02.0 VGA compatible controller [0300]: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller [8086:0152] (rev 09) (prog-if 00 [VGA controller])
+	Subsystem: ASRock Incorporation Device [1849:0152]
+	Flags: bus master, fast devsel, latency 0, IRQ 24
+	Memory at f7800000 (64-bit, non-prefetchable) [size=4M]
+	Memory at e0000000 (64-bit, prefetchable) [size=256M]
+	I/O ports at f000 [size=64]
+	Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]
+	Capabilities: [90] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [d0] Power Management version 2
+	Capabilities: [a4] PCI Advanced Features
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+00:14.0 USB controller [0c03]: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller [8086:1e31] (rev 04) (prog-if 30 [XHCI])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e31]
+	Flags: bus master, medium devsel, latency 0, IRQ 26
+	Memory at f7f00000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 2
+	Capabilities: [80] MSI: Enable+ Count=1/8 Maskable- 64bit+
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+00:16.0 Communication controller [0780]: Intel Corporation 7 Series/C216 Chipset Family MEI Controller #1 [8086:1e3a] (rev 04)
+	Subsystem: ASRock Incorporation Motherboard [1849:1e3a]
+	Flags: bus master, fast devsel, latency 0, IRQ 11
+	Memory at f7f1a000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+
+00:1a.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #2 [8086:1e2d] (rev 04) (prog-if 20 [EHCI])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e2d]
+	Flags: bus master, medium devsel, latency 0, IRQ 16
+	Memory at f7f18000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1b.0 Audio device [0403]: Intel Corporation 7 Series/C216 Chipset Family High Definition Audio Controller [8086:1e20] (rev 04)
+	Subsystem: ASRock Incorporation Z77 Extreme4 motherboard [1849:1898]
+	Flags: fast devsel, IRQ 5
+	Memory at f7f10000 (64-bit, non-prefetchable) [disabled] [size=16K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [60] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Root Complex Integrated Endpoint, IntMsgNum 0
+	Capabilities: [100] Virtual Channel
+	Capabilities: [130] Root Complex Link
+
+00:1c.0 PCI bridge [0604]: Intel Corporation 7 Series/C216 Chipset Family PCI Express Root Port 1 [8086:1e10] (rev c4) (prog-if 00 [Normal decode])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e10]
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: [disabled] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Express Root Port (Slot+), IntMsgNum 0
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation Motherboard [1849:1e10]
+	Capabilities: [a0] Power Management version 2
+	Kernel driver in use: pcieport
+
+00:1c.3 PCI bridge [0604]: Intel Corporation 7 Series/C216 Chipset Family PCI Express Root Port 4 [8086:1e16] (rev c4) (prog-if 00 [Normal decode])
+	Subsystem: ASRock Incorporation Device [1849:1e16]
+	Flags: bus master, fast devsel, latency 0, IRQ 19
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: f7e00000-f7efffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: f0000000-f00fffff [size=1M] [32-bit]
+	Capabilities: [40] Express Root Port (Slot+), IntMsgNum 0
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation Device [1849:1e16]
+	Capabilities: [a0] Power Management version 2
+	Kernel driver in use: pcieport
+
+00:1c.4 PCI bridge [0604]: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 5 [8086:1e18] (rev c4) (prog-if 00 [Normal decode])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e18]
+	Flags: bus master, fast devsel, latency 0, IRQ 16
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=0
+	I/O behind bridge: e000-efff [size=4K] [16-bit]
+	Memory behind bridge: f7d00000-f7dfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Express Root Port (Slot+), IntMsgNum 0
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation Motherboard [1849:1e18]
+	Capabilities: [a0] Power Management version 2
+	Kernel driver in use: pcieport
+
+00:1c.6 PCI bridge [0604]: Intel Corporation 7 Series/C210 Series Chipset Family PCI Express Root Port 7 [8086:1e1c] (rev c4) (prog-if 00 [Normal decode])
+	Subsystem: ASRock Incorporation Device [1849:1e1c]
+	Flags: bus master, fast devsel, latency 0, IRQ 18
+	Bus: primary=00, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: [disabled] [16-bit]
+	Memory behind bridge: f7c00000-f7cfffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [40] Express Root Port (Slot+), IntMsgNum 0
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation Device [1849:1e1c]
+	Capabilities: [a0] Power Management version 2
+	Kernel driver in use: pcieport
+
+00:1d.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #1 [8086:1e26] (rev 04) (prog-if 20 [EHCI])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e26]
+	Flags: bus master, medium devsel, latency 0, IRQ 23
+	Memory at f7f17000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1f.0 ISA bridge [0601]: Intel Corporation Z77 Express Chipset LPC Controller [8086:1e44] (rev 04)
+	Subsystem: ASRock Incorporation Motherboard [1849:1e44]
+	Flags: bus master, medium devsel, latency 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+
+00:1f.2 SATA controller [0106]: Intel Corporation 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode] [8086:1e02] (rev 04) (prog-if 01 [AHCI 1.0])
+	Subsystem: ASRock Incorporation Motherboard [1849:1e02]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 25
+	I/O ports at f0b0 [size=8]
+	I/O ports at f0a0 [size=4]
+	I/O ports at f090 [size=8]
+	I/O ports at f080 [size=4]
+	I/O ports at f060 [size=32]
+	Memory at f7f16000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [70] Power Management version 3
+	Capabilities: [a8] SATA HBA v1.0
+	Capabilities: [b0] PCI Advanced Features
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:1f.3 SMBus [0c05]: Intel Corporation 7 Series/C216 Chipset Family SMBus Controller [8086:1e22] (rev 04)
+	Subsystem: ASRock Incorporation Motherboard [1849:1e22]
+	Flags: medium devsel, IRQ 18
+	Memory at f7f15000 (64-bit, non-prefetchable) [size=256]
+	I/O ports at f040 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+02:00.0 Ethernet controller [0200]: Broadcom Inc. and subsidiaries NetLink BCM57781 Gigabit Ethernet PCIe [14e4:16b1] (rev 10)
+	Subsystem: ASRock Incorporation Z77 Extreme4 motherboard [1849:96b1]
+	Flags: bus master, fast devsel, latency 0, IRQ 19
+	Memory at f0010000 (64-bit, prefetchable) [size=64K]
+	Memory at f0000000 (64-bit, prefetchable) [size=64K]
+	Expansion ROM at f7e00000 [disabled] [size=2K]
+	Capabilities: [48] Power Management version 3
+	Capabilities: [58] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [a0] MSI-X: Enable+ Count=5 Masked-
+	Capabilities: [ac] Express Endpoint, IntMsgNum 0
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [13c] Device Serial Number 00-01-02-03-04-05-06-07
+	Capabilities: [150] Power Budgeting <?>
+	Capabilities: [160] Virtual Channel
+	Kernel driver in use: tg3
+	Kernel modules: tg3
+
+03:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. RTL8191SEvB Wireless LAN Controller [10ec:8172] (rev 10)
+	Subsystem: Realtek Semiconductor Co., Ltd. RTL8191SEvB Wireless LAN Controller [10ec:8172]
+	Flags: fast devsel, IRQ 11
+	I/O ports at e000 [disabled] [size=256]
+	Memory at f7d00000 (32-bit, non-prefetchable) [disabled] [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Legacy Endpoint, IntMsgNum 0
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Virtual Channel
+	Capabilities: [160] Device Serial Number 00-01-02-03-04-05-06-07
+
+04:00.0 USB controller [0c03]: ASMedia Technology Inc. ASM1042 SuperSpeed USB Host Controller [1b21:1042] (prog-if 30 [XHCI])
+	Subsystem: ASRock Incorporation Motherboard [1849:1042]
+	Flags: bus master, fast devsel, latency 0, IRQ 18
+	Memory at f7c00000 (64-bit, non-prefetchable) [size=32K]
+	Capabilities: [50] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [68] MSI-X: Enable+ Count=8 Masked-
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express Legacy Endpoint, IntMsgNum 0
+	Capabilities: [100] Virtual Channel
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+

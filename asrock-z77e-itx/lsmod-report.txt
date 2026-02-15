@@ -1,0 +1,16 @@
+Module                  Size  Used by
+binfmt_misc            20480  0
+nls_cp437              16384  1
+vfat                   20480  1
+fat                    94208  1 vfat
+sg                     45056  0
+x86_pkg_temp_thermal    12288  0
+acpi_cpufreq           20480  0
+loop                   32768  0
+efi_pstore             12288  0
+configfs               53248  1
+i2c_i801               24576  0
+i2c_smbus              12288  1 i2c_i801
+uas                    28672  0
+lpc_ich                28672  0
+mfd_core               12288  1 lpc_ich
