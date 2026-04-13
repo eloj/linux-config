@@ -16,9 +16,9 @@ It should work with most distributions, but definitely Debian, Ubuntu, Linux Min
 
 As a result, compared to Ubuntu mainline:
 
-* The kernel is 50% (-8MiB) smaller,
-* The initrd.img is 120% (~44MiB) smaller,
-* The system map file is 70% (~7MiB) smaller, and
+* The kernel is ~8MiB (~50%) smaller,
+* The initrd.img is ~44MiB (~50%) smaller,
+* The system map file is ~7MiB (~70%) smaller, and
 * The .config is less than half the size.
 
 Your mileage may vary.
