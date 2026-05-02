@@ -1,5 +1,5 @@
 # Linux Kernel Configurations
 
-These are current (and historical) kernel configurations.
+These are current (and historical) kernel configurations for specific motherboards.
 
 I reserve the right to force-push at any point.

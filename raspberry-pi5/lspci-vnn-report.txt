@@ -1,0 +1,55 @@
+0001:00:00.0 PCI bridge [0604]: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge [14e4:2712] (rev 21) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 38
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Memory behind bridge: 80000000-800fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [48] Power Management version 3
+	Capabilities: [ac] Express Root Port (Slot-), IntMsgNum 0
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [160] Virtual Channel
+	Capabilities: [180] Vendor Specific Information: ID=0000 Rev=0 Len=028 <?>
+	Capabilities: [300] Secondary PCI Express
+	Kernel driver in use: pcieport
+
+0001:01:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM951/PM951 [144d:a802] (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: Samsung Electronics Co Ltd PM963 2.5" NVMe PCIe SSD [144d:a801]
+	Flags: bus master, fast devsel, latency 0, IRQ 38
+	Memory at 1b80010000 (64-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 1b80000000 [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, IntMsgNum 0
+	Capabilities: [b0] MSI-X: Enable+ Count=9 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [148] Device Serial Number 00-00-00-00-00-00-00-00
+	Capabilities: [158] Power Budgeting <?>
+	Capabilities: [168] Secondary PCI Express
+	Capabilities: [188] Latency Tolerance Reporting
+	Capabilities: [190] L1 PM Substates
+	Kernel driver in use: nvme
+
+0002:00:00.0 PCI bridge [0604]: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge [14e4:2712] (rev 21) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 44
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Memory behind bridge: 00000000-005fffff [size=6M] [32-bit]
+	Prefetchable memory behind bridge: [disabled] [64-bit]
+	Capabilities: [48] Power Management version 3
+	Capabilities: [ac] Express Root Port (Slot-), IntMsgNum 0
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [160] Virtual Channel
+	Capabilities: [180] Vendor Specific Information: ID=0000 Rev=0 Len=028 <?>
+	Capabilities: [240] L1 PM Substates
+	Capabilities: [300] Secondary PCI Express
+	Kernel driver in use: pcieport
+
+0002:01:00.0 Ethernet controller [0200]: Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge [1de4:0001]
+	Flags: bus master, fast devsel, latency 0, IRQ 44
+	Memory at 1f00410000 (32-bit, non-prefetchable) [size=16K]
+	Memory at 1f00000000 (32-bit, non-prefetchable) [virtual] [size=4M]
+	Memory at 1f00400000 (32-bit, non-prefetchable) [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [70] Express Endpoint, IntMsgNum 0
+	Capabilities: [b0] MSI-X: Enable+ Count=61 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Kernel driver in use: rp1
+
