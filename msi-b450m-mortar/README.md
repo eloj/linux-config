@@ -1,6 +1,6 @@
 # Linux configuration for MSI B450M Mortar (Titanium)
 
-This is a fairly cut-down kernel configuration, tailored for this B450 AM4 board,
+This is a fairly cut-down kernel configuration, tailored for this AM4 board (MS-7B89),
 and _my_ system in particular.
 
 It should work with most distributions, but definitely Debian, Ubuntu, Linux Mint.
@@ -33,7 +33,7 @@ Note: First run 'make oldconfig' to adapt the configuration to your setup and cu
 make -j4 bindeb-pkg LOCALVERSION=-yourname
 ```
 
-## Extra info
+## Extra info / Additional configuration
 
 Example `/etc/modules-load.d/msi-b450m-mortar.conf`:
 ```
