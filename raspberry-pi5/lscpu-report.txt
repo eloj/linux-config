@@ -11,6 +11,7 @@ Core(s) per cluster:                     4
 Socket(s):                               -
 Cluster(s):                              1
 Stepping:                                r4p1
+Frequency boost:                         disabled
 CPU(s) scaling MHz:                      62%
 CPU max MHz:                             2400.0000
 CPU min MHz:                             1500.0000
@@ -30,12 +31,14 @@ NUMA node5 CPU(s):                       0-3
 NUMA node6 CPU(s):                       0-3
 NUMA node7 CPU(s):                       0-3
 Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
 Vulnerability Indirect target selection: Not affected
 Vulnerability Itlb multihit:             Not affected
 Vulnerability L1tf:                      Not affected
 Vulnerability Mds:                       Not affected
 Vulnerability Meltdown:                  Not affected
 Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
 Vulnerability Reg file data sampling:    Not affected
 Vulnerability Retbleed:                  Not affected
 Vulnerability Spec rstack overflow:      Not affected

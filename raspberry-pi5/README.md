@@ -3,7 +3,7 @@
 This is the standard/default configuration taken from a running RPi5.
 
 CPU: Cortex-A76 (stepping: r4p1)
-Kernel: 6.12.x
+Kernel: 6.18.x
 
 ## Links
 

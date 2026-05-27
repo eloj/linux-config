@@ -1,7 +1,7 @@
 Module                  Size  Used by
 snd_seq_dummy          49152  0
 snd_hrtimer            49152  1
-snd_seq                98304  7 snd_seq_dummy
+snd_seq               114688  7 snd_seq_dummy
 snd_seq_device         49152  1 snd_seq
 rfcomm                 81920  6
 algif_hash             49152  1
@@ -9,70 +9,64 @@ algif_skcipher         49152  1
 af_alg                 49152  6 algif_hash,algif_skcipher
 bnep                   49152  2
 binfmt_misc            49152  1
-brcmfmac_wcc           49152  0
-aes_ce_blk             49152  4
-aes_ce_cipher          49152  1 aes_ce_blk
+brcmfmac_cyw           49152  0
 hci_uart               65536  0
-ghash_ce               49152  0
-gf128mul               49152  1 ghash_ce
 btbcm                  49152  1 hci_uart
-sha2_ce                49152  0
-bluetooth             671744  31 hci_uart,btbcm,bnep,rfcomm
-brcmfmac              376832  1 brcmfmac_wcc
+bluetooth             688128  31 hci_uart,btbcm,bnep,rfcomm
 ecdh_generic           49152  2 bluetooth
-sha256_arm64           49152  1 sha2_ce
-brcmutil               49152  1 brcmfmac
+brcmfmac              393216  1 brcmfmac_cyw
 ecc                    65536  1 ecdh_generic
-sha1_ce                49152  0
-libaes                 49152  4 aes_ce_cipher,bluetooth,ghash_ce,aes_ce_blk
-sha1_generic           49152  1 sha1_ce
-cfg80211             1081344  1 brcmfmac
-pisp_be                49152  0
+aes_ce_blk             49152  4
+brcmutil               49152  1 brcmfmac
+aes_ce_cipher          49152  1 aes_ce_blk
+ghash_ce               49152  0
+cfg80211             1114112  2 brcmfmac_cyw,brcmfmac
+gf128mul               49152  1 ghash_ce
 rpi_hevc_dec           65536  0
+pisp_be                49152  0
 v4l2_mem2mem           65536  1 rpi_hevc_dec
 videobuf2_dma_contig    49152  2 pisp_be,rpi_hevc_dec
-raspberrypi_hwmon      49152  0
 videobuf2_memops       49152  1 videobuf2_dma_contig
+raspberrypi_hwmon      49152  0
 videobuf2_v4l2         49152  3 pisp_be,rpi_hevc_dec,v4l2_mem2mem
 rfkill                 49152  6 bluetooth,cfg80211
 videodev              344064  4 pisp_be,rpi_hevc_dec,videobuf2_v4l2,v4l2_mem2mem
-pwm_fan                49152  0
 videobuf2_common       98304  6 pisp_be,rpi_hevc_dec,videobuf2_dma_contig,videobuf2_v4l2,v4l2_mem2mem,videobuf2_memops
 mc                     81920  6 videodev,pisp_be,rpi_hevc_dec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem
+pwm_fan                49152  0
 rp1_adc                49152  0
 raspberrypi_gpiomem    49152  0
 sch_fq_codel           49152  3
 i2c_dev                49152  0
-fuse                  196608  1
+fuse                  229376  1
 nfnetlink              49152  1
-ip_tables              65536  0
-x_tables               81920  1 ip_tables
 ipv6                  622592  50
-vc4                   425984  4
+libsha1                65536  1 ipv6
 spidev                 49152  0
+vc4                   442368  4
 snd_soc_hdmi_codec     49152  2
+v3d                   212992  0
+drm_exec               49152  1 vc4
 drm_display_helper     49152  1 vc4
 cec                    65536  1 vc4
-drm_dma_helper         49152  1 vc4
-v3d                   212992  0
-snd_soc_core          327680  2 vc4,snd_soc_hdmi_codec
 gpu_sched              98304  1 v3d
+drm_dma_helper         49152  1 vc4
+drm_client_lib         49152  1 vc4
 drm_shmem_helper       49152  1 v3d
+snd_soc_core          327680  2 vc4,snd_soc_hdmi_codec
+drm_kms_helper        245760  4 drm_dma_helper,vc4,drm_shmem_helper,drm_client_lib
 snd_compress           49152  1 snd_soc_core
 snd_pcm_dmaengine      49152  1 snd_soc_core
-drm_kms_helper        245760  3 drm_dma_helper,vc4,drm_shmem_helper
-snd_pcm               163840  4 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
-drm                   704512  8 gpu_sched,drm_kms_helper,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper
-snd_timer              65536  3 snd_seq,snd_hrtimer,snd_pcm
 i2c_brcmstb            49152  0
-rp1_pio                65536  0
+drm                   737280  10 gpu_sched,drm_kms_helper,drm_exec,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper,drm_client_lib
+snd_pcm               180224  4 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
+snd_timer              81920  3 snd_seq,snd_hrtimer,snd_pcm
 spi_bcm2835            49152  0
-snd                   147456  9 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm
-gpio_keys              49152  0
+snd                   163840  9 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm
 drm_panel_orientation_quirks    65536  1 drm
 backlight              49152  2 drm_kms_helper,drm
+gpio_keys              49152  0
+rp1_pio                65536  0
 rp1_fw                 49152  1 rp1_pio
 rp1_mailbox            49152  1
-uio_pdrv_genirq        49152  0
-uio                    49152  1 uio_pdrv_genirq
 nvmem_rmem             49152  0
