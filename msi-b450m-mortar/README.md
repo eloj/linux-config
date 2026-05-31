@@ -23,7 +23,7 @@ As a result, compared to Ubuntu mainline:
 
 Your mileage may vary.
 
-If you want to use docker, xen, advanced networking, etc you will probably have to add to the configuration.
+If you want to use kvm, xen, docker, advanced networking, etc you will have to add to the configuration.
 
 ## Building
 
@@ -37,12 +37,15 @@ make -j4 bindeb-pkg LOCALVERSION=-yourname
 
 Example `/etc/modules-load.d/msi-b450m-mortar.conf`:
 ```
-# Seems to not autoload
+# Not autoloaded on my custom kernel
 snd_usb_audio
-# Motherboard SuperIO Chip
+# SuperIO Chip
 nct6775
 # Add /dev/ntsync for use with Proton
 ntsync
+# kernel ntfs3 driver over fuse
+ntfs3
+nf_conntrack
 ```
 
 ## Links
