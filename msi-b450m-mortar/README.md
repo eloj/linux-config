@@ -43,8 +43,6 @@ snd_usb_audio
 nct6775
 # Add /dev/ntsync for use with Proton
 ntsync
-# kernel ntfs3 driver over fuse
-ntfs3
 nf_conntrack
 ```
 
