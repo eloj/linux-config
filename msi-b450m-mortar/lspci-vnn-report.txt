@@ -297,7 +297,7 @@
 	Kernel modules: r8169
 
 25:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller S4LV008[Pascal] [144d:a80c] (prog-if 02 [NVM Express])
-	Subsystem: Samsung Electronics Co Ltd NVMe SSD Controller S4LV008[Pascal] [144d:a801]
+	Subsystem: Samsung Electronics Co Ltd SSD 990 PRO [144d:a801]
 	Flags: bus master, fast devsel, latency 0, IRQ 33, IOMMU group 15
 	Memory at fca00000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: [40] Power Management version 3
@@ -385,7 +385,7 @@
 	Kernel driver in use: amdgpu
 	Kernel modules: amdgpu
 
-28:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 48 HDMI/DP Audio Controller [1002:ab40]
+28:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 48 HDMI/DP Audio Controller [1002:ab40] (prog-if 00 [HDA compatible])
 	Subsystem: Advanced Micro Devices, Inc. [AMD/ATI] Navi 48 HDMI/DP Audio Controller [1002:ab40]
 	Flags: bus master, fast devsel, latency 0, IRQ 91, IOMMU group 19
 	Memory at fcda0000 (32-bit, non-prefetchable) [size=16K]
@@ -460,7 +460,7 @@
 	Kernel driver in use: xhci_hcd
 	Kernel modules: xhci_pci
 
-2a:00.4 Audio device [0403]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse HD Audio Controller [1022:1487]
+2a:00.4 Audio device [0403]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse HD Audio Controller [1022:1487] (prog-if 00 [HDA compatible])
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Starship/Matisse HD Audio Controller [1462:eb89]
 	Flags: bus master, fast devsel, latency 0, IRQ 92, IOMMU group 24
 	Memory at fc900000 (32-bit, non-prefetchable) [size=32K]
