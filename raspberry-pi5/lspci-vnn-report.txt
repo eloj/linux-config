@@ -27,11 +27,12 @@
 	Capabilities: [188] Latency Tolerance Reporting
 	Capabilities: [190] L1 PM Substates
 	Kernel driver in use: nvme
+	Kernel modules: nvme
 
 0002:00:00.0 PCI bridge [0604]: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge [14e4:2712] (rev 21) (prog-if 00 [Normal decode])
 	Flags: bus master, fast devsel, latency 0, IRQ 44
 	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
-	Memory behind bridge: 00000000-005fffff [size=6M] [32-bit]
+	Memory behind bridge: 00000000-004fffff [size=5M] [32-bit]
 	Prefetchable memory behind bridge: [disabled] [64-bit]
 	Capabilities: [48] Power Management version 3
 	Capabilities: [ac] Express Root Port (Slot-), IntMsgNum 0

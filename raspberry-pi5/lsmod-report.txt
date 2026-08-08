@@ -1,72 +1,72 @@
 Module                  Size  Used by
-snd_seq_dummy          49152  0
-snd_hrtimer            49152  1
-snd_seq               114688  7 snd_seq_dummy
-snd_seq_device         49152  1 snd_seq
-rfcomm                 81920  6
+aes_ce_blk             49152  4
+aes_ce_cipher          49152  1 aes_ce_blk
+af_alg                 49152  6 algif_hash,algif_skcipher
 algif_hash             49152  1
 algif_skcipher         49152  1
-af_alg                 49152  6 algif_hash,algif_skcipher
-bnep                   49152  2
+backlight              49152  2 drm_kms_helper,drm
 binfmt_misc            49152  1
-brcmfmac_cyw           49152  0
-hci_uart               65536  0
-btbcm                  49152  1 hci_uart
-bluetooth             688128  31 hci_uart,btbcm,bnep,rfcomm
-ecdh_generic           49152  2 bluetooth
+bluetooth             704512  31 hci_uart,btbcm,bnep,rfcomm
+bnep                   49152  2
 brcmfmac              393216  1 brcmfmac_cyw
-ecc                    65536  1 ecdh_generic
-aes_ce_blk             49152  4
+brcmfmac_cyw           49152  0
 brcmutil               49152  1 brcmfmac
-aes_ce_cipher          49152  1 aes_ce_blk
-ghash_ce               49152  0
+btbcm                  49152  1 hci_uart
+cec                    65536  1 drm_display_helper
 cfg80211             1114112  2 brcmfmac_cyw,brcmfmac
-gf128mul               49152  1 ghash_ce
-rpi_hevc_dec           65536  0
-pisp_be                49152  0
-v4l2_mem2mem           65536  1 rpi_hevc_dec
-videobuf2_dma_contig    49152  2 pisp_be,rpi_hevc_dec
-videobuf2_memops       49152  1 videobuf2_dma_contig
-raspberrypi_hwmon      49152  0
-videobuf2_v4l2         49152  3 pisp_be,rpi_hevc_dec,v4l2_mem2mem
-rfkill                 49152  6 bluetooth,cfg80211
-videodev              344064  4 pisp_be,rpi_hevc_dec,videobuf2_v4l2,v4l2_mem2mem
-videobuf2_common       98304  6 pisp_be,rpi_hevc_dec,videobuf2_dma_contig,videobuf2_v4l2,v4l2_mem2mem,videobuf2_memops
-mc                     81920  6 videodev,pisp_be,rpi_hevc_dec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem
-pwm_fan                49152  0
-rp1_adc                49152  0
-raspberrypi_gpiomem    49152  0
-sch_fq_codel           49152  3
-i2c_dev                49152  0
+drm                   737280  10 gpu_sched,drm_kms_helper,drm_exec,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper,drm_client_lib
+drm_client_lib         49152  1 vc4
+drm_display_helper     49152  1 vc4
+drm_dma_helper         49152  1 vc4
+drm_exec               49152  1 vc4
+drm_kms_helper        245760  4 drm_dma_helper,vc4,drm_shmem_helper,drm_client_lib
+drm_panel_orientation_quirks    65536  1 drm
+drm_shmem_helper       49152  1 v3d
+ecc                    65536  1 ecdh_generic
+ecdh_generic           49152  2 bluetooth
 fuse                  229376  1
-nfnetlink              49152  1
+gf128mul               49152  1 ghash_ce
+ghash_ce               49152  0
+gpio_keys              49152  0
+gpu_sched              98304  1 v3d
+hci_uart               65536  0
+i2c_brcmstb            49152  0
+i2c_dev                49152  0
 ipv6                  622592  50
 libsha1                65536  1 ipv6
-spidev                 49152  0
-vc4                   442368  4
-snd_soc_hdmi_codec     49152  2
-v3d                   212992  0
-drm_exec               49152  1 vc4
-drm_display_helper     49152  1 vc4
-cec                    65536  1 vc4
-gpu_sched              98304  1 v3d
-drm_dma_helper         49152  1 vc4
-drm_client_lib         49152  1 vc4
-drm_shmem_helper       49152  1 v3d
-snd_soc_core          327680  2 vc4,snd_soc_hdmi_codec
-drm_kms_helper        245760  4 drm_dma_helper,vc4,drm_shmem_helper,drm_client_lib
-snd_compress           49152  1 snd_soc_core
-snd_pcm_dmaengine      49152  1 snd_soc_core
-i2c_brcmstb            49152  0
-drm                   737280  10 gpu_sched,drm_kms_helper,drm_exec,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper,drm_client_lib
-snd_pcm               180224  4 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
-snd_timer              81920  3 snd_seq,snd_hrtimer,snd_pcm
-spi_bcm2835            49152  0
-snd                   163840  9 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm
-drm_panel_orientation_quirks    65536  1 drm
-backlight              49152  2 drm_kms_helper,drm
-gpio_keys              49152  0
-rp1_pio                65536  0
+mc                     81920  6 videodev,pisp_be,rpi_hevc_dec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem
+nfnetlink              49152  1
+nvmem_rmem             49152  0
+pisp_be                49152  0
+pwm_fan                49152  0
+raspberrypi_gpiomem    49152  0
+raspberrypi_hwmon      49152  0
+rfcomm                 98304  6
+rfkill                 49152  6 bluetooth,cfg80211
+rp1_adc                49152  0
 rp1_fw                 49152  1 rp1_pio
 rp1_mailbox            49152  1
-nvmem_rmem             49152  0
+rp1_pio                81920  0
+rpi_hevc_dec           65536  0
+sch_fq_codel           49152  3
+snd                   163840  9 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm
+snd_compress           49152  1 snd_soc_core
+snd_hrtimer            49152  1
+snd_pcm               180224  4 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
+snd_pcm_dmaengine      49152  1 snd_soc_core
+snd_seq               131072  7 snd_seq_dummy
+snd_seq_device         49152  1 snd_seq
+snd_seq_dummy          49152  0
+snd_soc_core          327680  2 vc4,snd_soc_hdmi_codec
+snd_soc_hdmi_codec     49152  2
+snd_timer              81920  3 snd_seq,snd_hrtimer,snd_pcm
+spi_bcm2835            49152  0
+spidev                 49152  0
+v3d                   212992  0
+v4l2_mem2mem           65536  1 rpi_hevc_dec
+vc4                   442368  4
+videobuf2_common       98304  6 pisp_be,rpi_hevc_dec,videobuf2_dma_contig,videobuf2_v4l2,v4l2_mem2mem,videobuf2_memops
+videobuf2_dma_contig    49152  2 pisp_be,rpi_hevc_dec
+videobuf2_memops       49152  1 videobuf2_dma_contig
+videobuf2_v4l2         49152  3 pisp_be,rpi_hevc_dec,v4l2_mem2mem
+videodev              344064  4 pisp_be,rpi_hevc_dec,videobuf2_v4l2,v4l2_mem2mem
