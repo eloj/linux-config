@@ -13,8 +13,8 @@ brcmfmac_cyw           49152  0
 brcmutil               49152  1 brcmfmac
 btbcm                  49152  1 hci_uart
 cec                    65536  1 drm_display_helper
-cfg80211             1114112  2 brcmfmac_cyw,brcmfmac
-drm                   737280  10 gpu_sched,drm_kms_helper,drm_exec,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper,drm_client_lib
+cfg80211             1130496  2 brcmfmac_cyw,brcmfmac
+drm                   770048  10 gpu_sched,drm_kms_helper,drm_exec,drm_dma_helper,v3d,vc4,drm_shmem_helper,drm_display_helper,drm_client_lib
 drm_client_lib         49152  1 vc4
 drm_display_helper     49152  1 vc4
 drm_dma_helper         49152  1 vc4
@@ -32,8 +32,7 @@ gpu_sched              98304  1 v3d
 hci_uart               65536  0
 i2c_brcmstb            49152  0
 i2c_dev                49152  0
-ipv6                  622592  50
-libsha1                65536  1 ipv6
+ipv6                  622592  48
 mc                     81920  6 videodev,pisp_be,rpi_hevc_dec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem
 nfnetlink              49152  1
 nvmem_rmem             49152  0
@@ -52,7 +51,7 @@ sch_fq_codel           49152  3
 snd                   163840  9 snd_seq,snd_seq_device,snd_soc_hdmi_codec,snd_timer,snd_compress,snd_soc_core,snd_pcm
 snd_compress           49152  1 snd_soc_core
 snd_hrtimer            49152  1
-snd_pcm               180224  4 snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
+snd_pcm               180224  5 vc4,snd_soc_hdmi_codec,snd_compress,snd_soc_core,snd_pcm_dmaengine
 snd_pcm_dmaengine      49152  1 snd_soc_core
 snd_seq               131072  7 snd_seq_dummy
 snd_seq_device         49152  1 snd_seq
@@ -69,4 +68,4 @@ videobuf2_common       98304  6 pisp_be,rpi_hevc_dec,videobuf2_dma_contig,videob
 videobuf2_dma_contig    49152  2 pisp_be,rpi_hevc_dec
 videobuf2_memops       49152  1 videobuf2_dma_contig
 videobuf2_v4l2         49152  3 pisp_be,rpi_hevc_dec,v4l2_mem2mem
-videodev              344064  4 pisp_be,rpi_hevc_dec,videobuf2_v4l2,v4l2_mem2mem
+videodev              360448  4 pisp_be,rpi_hevc_dec,videobuf2_v4l2,v4l2_mem2mem
