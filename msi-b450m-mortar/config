@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 7.3.0 Kernel Configuration
+# Linux/x86 7.3.6 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (GCC) 16.1.0"
 CONFIG_CC_IS_GCC=y
@@ -1808,7 +1808,6 @@ CONFIG_SATA_AHCI=m
 CONFIG_SATA_MOBILE_LPM_POLICY=3
 CONFIG_SATA_AHCI_PLATFORM=m
 # CONFIG_AHCI_DWC is not set
-# CONFIG_SATA_INIC162X is not set
 # CONFIG_SATA_ACARD_AHCI is not set
 # CONFIG_SATA_SIL24 is not set
 # CONFIG_ATA_SFF is not set
@@ -2985,6 +2984,7 @@ CONFIG_DRM_AMD_ACP=y
 #
 CONFIG_DRM_AMD_DC=y
 CONFIG_DRM_AMD_DC_FP=y
+# CONFIG_DRM_AMD_DC_DCE is not set
 # end of Display Engine Configuration
 
 # CONFIG_HSA_AMD is not set

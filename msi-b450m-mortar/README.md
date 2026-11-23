@@ -7,7 +7,7 @@ It should work with most distributions, but definitely Debian, Ubuntu, Linux Min
 
 * Configured to only support AMD CPUs, and build with `-march=native`.
 * Filesystems: ext4, btrfs and VFAT + NTFS3. Also builds FUSE (req. for AppImages).
-* Graphics: Only `amdgpu` is built. If you have an Intel dGPU you'll need to enable that (e.g xe2 or whatever).
+* Graphics: Only `amdgpu` is built, for Navi and later. If you have an Intel dGPU you'll need to enable that (e.g xe2 or whatever).
 * Ethernet: Via `r8169` driver for the Realtek RTL8111/8168/8211/8411 Controller [10ec:8168]
 * SuperIO: Builds `NCT6775` driver for NCT6797 superIO chip, so sensors work... kinda. Fan speeds and main temps seem correct.
 * USB: Contains additional configuration for Corsair and Logitech USB devices.
@@ -39,11 +39,11 @@ Example `/etc/modules-load.d/msi-b450m-mortar.conf`:
 ```
 # Not autoloaded on my custom kernel
 snd_usb_audio
+nf_conntrack
 # SuperIO Chip
 nct6775
 # Add /dev/ntsync for use with Proton
 ntsync
-nf_conntrack
 ```
 
 ## Links
